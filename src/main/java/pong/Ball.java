@@ -5,21 +5,47 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class Ball {
+public class Ball extends Rectangle {
 
-	Ball() {
-		
-	}
-	
-	public void setXDirection(int randomXDirection) {
-		
-	}
-	public void setYDirection(int randomYDirection) {
-			
+	Random random;
+	int xVelocity;
+	int yVelocity;
+
+	Ball(int x, int x, int width, int height) {
+		super()x, y, width, height);
+		random = new Random();
+		int randomXDirection = random.nextInt(2);
+		if(randomXDirection == 0) {
+			randomXDirection--;
 		}
-	public void move() {
+		setXDirection(randomXDirection*initialSpeed);
+		
+		int randomYDirection = random.nextInt(2);
+		if(randomYDirection == 0) {
+			randomYDirection--;
+		}
+		setYDirection(randomYDirection*initialSpeed);
+		
 		
 	}
-	public void 
-	
+
+	public void setXDirection(int randomXDirection) {
+		xVelocity = randomXDirection;
+
+	}
+
+	public void setYDirection(int randomYDirection) {
+		yVelocity = randomYDirection;
+	}
+
+	public void move() {
+		x += xVelocity;
+		y = yVelocity;
+	}
+
+	public void draw(Graphics g) {
+		g.setColor(Color.white);
+		g.fillOval(x, y, height, width);
+	}
+
 }
