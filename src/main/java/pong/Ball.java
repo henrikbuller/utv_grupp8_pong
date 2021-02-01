@@ -1,4 +1,4 @@
-package pong;
+package src.main.java.pong;
 
 import java.awt.*;
 import java.awt.event.*;
