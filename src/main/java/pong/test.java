@@ -1,4 +1,4 @@
-package src.main.java.pong;
+package pong;
 
 public class test {
 
