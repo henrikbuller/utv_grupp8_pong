@@ -10,9 +10,10 @@ public class Ball extends Rectangle {
 	Random random;
 	int xVelocity;
 	int yVelocity;
+	int initialSpeed = 2;
 
-	Ball(int x, int x, int width, int height) {
-		super()x, y, width, height);
+	Ball(int x, int y, int width, int height) {
+		super(x,y,width,height);
 		random = new Random();
 		int randomXDirection = random.nextInt(2);
 		if(randomXDirection == 0) {

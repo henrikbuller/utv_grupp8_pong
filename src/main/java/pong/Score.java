@@ -1,6 +1,9 @@
-package pong;
+package src.main.java.pong;
 
-import java.awt.Color;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import javax.swing.*;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Rectangle;

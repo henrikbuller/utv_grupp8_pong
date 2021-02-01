@@ -1,4 +1,4 @@
-package hb_pong;
+package src.main.java.pong;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -6,7 +6,7 @@ import java.util.*;
 import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable{
-	
+	 
 	static final int GAME_WIDTH = 1000;
 	static final int GAME_HEIGHT = (int)(GAME_WIDTH * (0.5555));
 	static final Dimension SCREEN_SIZE = new Dimension(GAME_WIDTH,GAME_HEIGHT);
@@ -150,13 +150,13 @@ public class GamePanel extends JPanel implements Runnable{
 
 	public class AL extends KeyAdapter {
 		public void KeyPressed(KeyEvent e) {
-			paddle1.Keypressed(e);
-			paddle2.Keypressed(e);
+			paddle1.keyPressed(e);
+			paddle2.keyPressed(e);
 		}
 
 		public void KeyReleased(KeyEvent e) {
-			paddle1.KeyReleased(e);
-			paddle2.KeyReleased(e);
+			paddle1.keyReleased(e);
+			paddle2.keyReleased(e);
 			
 		}
 	}

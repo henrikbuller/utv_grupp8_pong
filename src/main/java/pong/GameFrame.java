@@ -1,4 +1,4 @@
-package pong;
+package src.main.java.pong;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -9,7 +9,7 @@ public class GameFrame extends Jframe {
 
     GamePanel panel;
 
-    GamePanel() {
+    GameFrame() {
         panel = new GamePanel();
         this.add(panel);
         this.setTitle("Pong Game");
