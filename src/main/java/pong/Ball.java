@@ -41,7 +41,7 @@ public class Ball extends Rectangle {
 
 	public void move() {
 		x += xVelocity;
-		y = yVelocity;
+		y += yVelocity;
 	}
 
 	public void draw(Graphics g) {
