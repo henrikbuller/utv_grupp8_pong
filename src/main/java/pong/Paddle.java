@@ -15,7 +15,7 @@ public class Paddle extends Rectangle {
     }
 
     public void keyPressed(KeyEvent e) {
-        switch(id {
+        switch(id) {
             case 1:
             if(e.getKeyCode()==KeyEvent.VK_W) {
                 setYDirection(-speed);
@@ -68,7 +68,7 @@ public class Paddle extends Rectangle {
 
     }
 
-    public void setYDirection(int setYDirection) {
+    public void setYDirection(int yDirection) {
         yVelocity = yDirection;
 
     }
