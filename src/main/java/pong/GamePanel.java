@@ -57,6 +57,9 @@ public class GamePanel extends JPanel implements Runnable{
 		paddle1.draw(g);
 		paddle2.draw(g);
 		ball.draw(g);
+		score.draw(g);
+		Toolkit.getDefaultToolkit().sync();
+		
 	}
 
 	public void move() {
@@ -131,8 +134,8 @@ public class GamePanel extends JPanel implements Runnable{
 	public void run() {
 		//game loop
 		long lastTime = System.nanoTime();
-		double amounthOfTicks = 60.0;
-		double ns = 1000000000;
+		double amountOfTicks = 60.0;
+		double ns = 1000000000 / amountOfTicks;
 		double delta = 0;
 		while(true) {
 			long now = System.nanoTime();
