@@ -4,6 +4,7 @@
   <artifactId>pong</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>mavenclub</name>
+
  <dependencies>
 <!-- https://mvnrepository.com/artifact/org.junit/junit5-api -->
  <dependency>
@@ -38,4 +39,5 @@ to build plugins, in order to tell maven to use 1.8. -->
 
  </plugins>
 </build>
+
 </project>
