@@ -5,7 +5,7 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class GameFrame extends Jframe {
+public class GameFrame extends JFrame {
 
     GamePanel panel;
 
@@ -13,11 +13,11 @@ public class GameFrame extends Jframe {
         panel = new GamePanel();
         this.add(panel);
         this.setTitle("Pong Game");
-        this.setResizable("false");
+        this.setResizable(false);
         this.setBackground(Color.black);
-        this.setDefaultCloseOperation(Jframe.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
-        this.setVisable(true);
+        this.setVisible(true);
         this.setLocationRelativeTo(null);
     }
 }
