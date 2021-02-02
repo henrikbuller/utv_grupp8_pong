@@ -3,7 +3,7 @@
   <groupId>src.main.java.pong</groupId>
   <artifactId>pong</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>mavenclub</name>
+  <name>pong</name>
 
  <dependencies>
 <!-- https://mvnrepository.com/artifact/org.junit/junit5-api -->
