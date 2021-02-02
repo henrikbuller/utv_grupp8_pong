@@ -2,9 +2,13 @@ package pong;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-
+	/**
+	 * 
+	 * @author jmlb
+	 *
+	 */
 public class BallTest {
-
+	
 	@Test
 	public void testCreateBall() {
 		Ball theBall = new Ball(10, 20, 30, 40);
