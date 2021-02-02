@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 	 * @author jmlb
 	 *
 	 */
-public class BallTest {
+class BallTest {
 	
 	@Test
-	public void testCreateBall() {
+	void testCreateBall() {
 		Ball theBall = new Ball(10, 20, 30, 40);
 		assertEquals(10, theBall.getX());
 		assertEquals(20, theBall.getY());
@@ -18,6 +18,20 @@ public class BallTest {
 		assertEquals(40, theBall.getHeight());
 	}
 	
+	/*
+	@Test
+	void setXDirectionTest() {
+		setXDirection
+	}
 	
+	public void setXDirection(int randomXDirection) {
+		xVelocity = randomXDirection;
+
+	}
+
+	public void setYDirection(int randomYDirection) {
+		yVelocity = randomYDirection;
+	}
+	*/
 	
 }
