@@ -2,6 +2,7 @@ package pong;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 import org.junit.jupiter.api.Test;
 
 
@@ -9,7 +10,7 @@ class GamePanelTest {
 
 	// Tests for GamePanel constructor
 	@Test
-	void testPanelCreatesNewBall() {
+	void testPanelCreatesNewBallInsideGamePanel() {
 		GamePanel panel = new GamePanel();
 		// ball is not outside left of GamePanel
 		assertTrue(panel.ball.x >= 0);
@@ -29,5 +30,7 @@ class GamePanelTest {
 		assertEquals(panel.SCREEN_SIZE, panel.getPreferredSize());
 
 	}
+	
+	
 
 }
