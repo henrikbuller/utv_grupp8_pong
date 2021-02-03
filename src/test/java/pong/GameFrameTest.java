@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 class GameFrameTest extends JFrame {
 	
 	@Test
-	void gameFrameTest() {
+	void gameFrameTestSettingBackgroundColor() {
 		GamePanel tester = new GamePanel();
 		tester.setBackground(Color.black);
 		assertEquals(Color.black, tester.getBackground() );
