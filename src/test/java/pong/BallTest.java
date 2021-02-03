@@ -8,6 +8,10 @@ class BallTest {
 	Ball theBall = new Ball(10, 10, 30, 30);
 	int velocity = 2;
 	
+	/*
+	 * Test constructor, only done here as to ascertain that intended
+	 * value is set, to be used in the subsequent test
+	 */
 	@Test
 	void testCreateBall() {
 		assertEquals(10, theBall.getX());
