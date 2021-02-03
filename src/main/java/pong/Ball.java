@@ -45,7 +45,7 @@ public class Ball extends Rectangle {
 
 	/**
 	 * 
-	 * @param randomXDirection sets the velocity on x axle
+	 * @param randomXDirection sets the direction on x axle
 	 */
 	public void setXDirection(int randomXDirection) {
 		xVelocity = randomXDirection;
@@ -54,14 +54,14 @@ public class Ball extends Rectangle {
 
 	/**
 	 * 
-	 * @param randomYDirection sets the velocity on the y axle
+	 * @param randomYDirection sets the direction on the y axle
 	 */
 	public void setYDirection(int randomYDirection) {
 		yVelocity = randomYDirection;
 	}
 
 	/**
-	 * Invoking move() will set the object (ball and paddle) moving along the 
+	 * Invoking move() will set the object moving along the 
 	 * (x,y) axle, incrementing the speed each time move() is called.
 	 */
 	public void move() {
