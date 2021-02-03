@@ -4,7 +4,6 @@
  * @author Alexander Gabay
  */
 
-
 package pong;
 
 import java.awt.*;
@@ -21,15 +20,12 @@ public class Paddle extends Rectangle {
 		super(x, y, PADDLE_WIDTH, PADDLE_HEIGHT);
 		this.id = id;
 	}
-	
-	
-	
-/** 
-* @param This method reads the key input from
-* the four different keys
-* @return If one of the keys are pressed
-* sets the movement on the Y-axis to the set speed.
-*/	
+
+	/**
+	 * @param This method reads the key input from the four different keys
+	 * @return If one of the keys are pressed sets the movement on the Y-axis to the
+	 *         set speed.
+	 */
 
 	public void keyPressed(KeyEvent e) {
 		switch (id) {
@@ -38,7 +34,7 @@ public class Paddle extends Rectangle {
 				setYDirection(-speed);
 				move();
 			}
-			if (e.getKeyCode() == KeyEvent.VK_S) { 
+			if (e.getKeyCode() == KeyEvent.VK_S) {
 				setYDirection(speed);
 				move();
 			}
@@ -58,12 +54,10 @@ public class Paddle extends Rectangle {
 
 	}
 
-/** 	
- * @param This method reads the key input from
- * the four different keys
- * @return If one of the keys are released
- * sets the movement on the Y-axis to 0.
- */
+	/**
+	 * @param This method reads the key input from the four different keys
+	 * @return If one of the keys are released sets the movement on the Y-axis to 0.
+	 */
 	public void keyReleased(KeyEvent e) {
 		switch (id) {
 		case 1:
@@ -93,12 +87,10 @@ public class Paddle extends Rectangle {
 
 	public void setYDirection(int yDirection) {
 		yVelocity = yDirection;
-
 	}
 
 	public void move() {
 		y = y + yVelocity;
-
 	}
 
 	/**
