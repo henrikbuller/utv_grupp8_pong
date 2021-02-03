@@ -100,6 +100,10 @@ public class Paddle extends Rectangle {
 
 	}
 
+	/**
+	 * 
+	 * @param g This method paints the paddles
+	 */
 	public void draw(Graphics g) {
 		if (id == 1)
 			g.setColor(Color.blue);
