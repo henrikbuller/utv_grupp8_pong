@@ -1,3 +1,12 @@
+/**
+ * This class draws and displays the score board
+ * of the game.
+ * The score counting is made in the GamePanel class.
+ * @author Henrik Buller
+ * 
+ */
+
+
 package pong;
 
 import java.awt.*;
@@ -20,6 +29,11 @@ public class Score extends Rectangle {
 		Score.GAME_HEIGHT = GAME_HEIGHT;
 	}
 	
+	
+	/**
+	 * 
+	 * @param g graws the graphics, font and display of the score board.
+	 */
 	public void draw(Graphics g) {
 		g.setColor(Color.white);
 		g.setFont(new Font("Consolas",Font.PLAIN,60));
