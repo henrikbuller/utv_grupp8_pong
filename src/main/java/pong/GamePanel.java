@@ -148,7 +148,6 @@ public class GamePanel extends JPanel implements Runnable {
 			System.out.println("Player 2: " + score.player2);
 		}
 		if (ball.x >= GAME_WIDTH-BALL_DIAMETER) {
-			System.out.println("Här hände det");
 			score.player1++;
 			newPaddles();
 			newBall();
