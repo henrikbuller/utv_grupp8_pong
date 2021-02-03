@@ -31,21 +31,8 @@ class PaddleTest {
 	}
 	
 	
-	@Test
-	public void moveTest() {
-		Paddle p1 = new Paddle(5, 5, 25, 100, 1);
-		p1.move();
-		
-	}
 
-	/*@Test
-	public void keyPressTest() throws AWTException {
-		Robot rob = new Robot();
-		rob.keyPress(KeyEvent.VK_W);
-		rob.keyPress(KeyEvent.VK_S);
-		rob.keyPress(KeyEvent.VK_UP);
-		rob.keyPress(KeyEvent.VK_DOWN);
-	}*/
+
 		
 		
 		
