@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
 
 class GamePanelTest {
 
-	// Tests for GamePanel constructor
+	
 	@Test
-	void testPanelCreatesNewBallInsideGamePanel() {
+	void testGamePanelConstructorCreatesNewBallInsideGamePanel() {
 		GamePanel panel = new GamePanel();
 		// ball is not outside left of GamePanel
 		assertTrue(panel.ball.x >= 0);
