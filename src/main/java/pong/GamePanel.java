@@ -123,11 +123,11 @@ public class GamePanel extends JPanel implements Runnable {
 			ball.xVelocity++; // optional for higher difficulty
 			if (ball.yVelocity > 0)
 				ball.yVelocity++;
-			else {
+			else 
 				ball.yVelocity--;
 				ball.setXDirection(-ball.xVelocity);
 				ball.setYDirection(ball.yVelocity);
-			}
+			
 		}
 
 		// Stops paddles at window edges
@@ -147,7 +147,8 @@ public class GamePanel extends JPanel implements Runnable {
 			newBall();
 			System.out.println("Player 2: " + score.player2);
 		}
-		if (ball.x >= GAME_WIDTH - BALL_DIAMETER) {
+		if (ball.x >= GAME_WIDTH-BALL_DIAMETER) {
+			System.out.println("Här hände det");
 			score.player1++;
 			newPaddles();
 			newBall();
