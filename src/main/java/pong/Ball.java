@@ -1,6 +1,6 @@
 /**
- * This class creates a ball by extending Rectangle class and giving the ball an initial speed and 
- * direction which will increment by invoking move() method. 
+ * This class creates a ball by extending Rectangle class and giving the ball 
+ * an initial speed and direction which will increment by invoking move() method. 
  *  
  *  @author jmlb
  */
@@ -17,7 +17,16 @@ public class Ball extends Rectangle {
 	int xVelocity;
 	int yVelocity;
 	int initialSpeed = 2;
- 
+
+	/**
+	 * A Ball specifies an area in a coordinate space that is enclosed by the
+	 * Ball's object's upper-left point (x,y) in the coordinate space, its width,
+	 * and its height. Each Ball will have an initial speed and bearing along
+	 * the (x,y) axle. 
+	 * 
+	 * {@inheritDoc}Rectangle
+	 * 
+	 */
 	Ball(int x, int y, int width, int height) {
 		super(x, y, width, height);
 		random = new Random();
@@ -35,20 +44,37 @@ public class Ball extends Rectangle {
 
 	}
 
+	/**
+	 * 
+	 * @param randomXDirection sets the velocity on x axle
+	 */
 	public void setXDirection(int randomXDirection) {
-		xVelocity = randomXDirection; 
+		xVelocity = randomXDirection;
 
 	}
 
+	/**
+	 * 
+	 * @param randomYDirection sets the velocity on the y axle
+	 */
 	public void setYDirection(int randomYDirection) {
 		yVelocity = randomYDirection;
 	}
 
+	/**
+	 * Invoking move() will set the object (ball and paddle) moving along the 
+	 * (x,y) axle, incrementing the speed each time move() is called.
+	 */
 	public void move() {
 		x += xVelocity;
 		y += yVelocity;
 	}
-
+	
+	/**
+	 * Calls draws objects by calling upon the paint method.
+	 * 
+	 * @param g the graphics to draw.
+	 */
 	public void draw(Graphics g) {
 		g.setColor(Color.white);
 		g.fillOval(x, y, height, width);
