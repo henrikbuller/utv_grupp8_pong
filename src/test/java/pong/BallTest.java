@@ -10,7 +10,7 @@ class BallTest {
 	
 	/*
 	 * Test constructor, only done here as to ascertain that intended
-	 * value is set, to be used in the subsequent test
+	 * value is set, to be used in the subsequent test below
 	 */
 	@Test
 	void testCreateBall() {
