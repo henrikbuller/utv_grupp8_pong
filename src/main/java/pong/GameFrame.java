@@ -6,9 +6,9 @@ import java.util.*;
 import javax.swing.*;
 
 public class GameFrame extends JFrame {
-
     GamePanel panel;
 
+    //Creating the game engine
     GameFrame() {
         panel = new GamePanel();
         this.add(panel);

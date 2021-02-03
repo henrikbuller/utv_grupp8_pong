@@ -2,18 +2,19 @@ package pong;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import javax.swing.JFrame;
+import java.awt.Color;
+
+import javax.swing.*;
 
 import org.junit.jupiter.api.Test;
 
-class GameFrameTest {
-	/*
-	GamePanel gamePanel = new GamePanel();
+class GameFrameTest extends JFrame {
+	
 	@Test
 	void gameFrameTest() {
-		JFrame tester = new JFrame();
-		tester.add(gamePanel);
-		assertEquals(gamePanel, tester.ge);
+		GamePanel tester = new GamePanel();
+		tester.setBackground(Color.black);
+		assertEquals(Color.black, tester.getBackground() );
 	}
-	*/
+	
 }
