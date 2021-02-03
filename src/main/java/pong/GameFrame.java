@@ -1,3 +1,9 @@
+/**
+ * This class creates the GameFrame and starts the game by creating an instance of GamePanel 
+ * 
+ * @author jmlb
+ */
+
 package pong;
 
 import java.awt.*;
@@ -8,7 +14,7 @@ import javax.swing.*;
 public class GameFrame extends JFrame {
     GamePanel panel;
 
-    //Creating the game engine
+    
     GameFrame() {
         panel = new GamePanel();
         this.add(panel);

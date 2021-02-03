@@ -1,3 +1,9 @@
+/**
+ * This class creates a ball by extending Rectangle class and giving the ball an initial speed and 
+ * direction which will increment by invoking move() method. 
+ *  
+ *  @author jmlb
+ */
 package pong;
 
 import java.awt.*;

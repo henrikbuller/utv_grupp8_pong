@@ -8,30 +8,26 @@ import org.junit.jupiter.api.Test;
 	 *
 	 */
 class BallTest {
+	Ball theBall = new Ball(10, 10, 30, 30);
+	int velocity = 2;
 	
 	@Test
 	void testCreateBall() {
-		Ball theBall = new Ball(10, 20, 30, 40);
 		assertEquals(10, theBall.getX());
-		assertEquals(20, theBall.getY());
+		assertEquals(10, theBall.getY());
 		assertEquals(30, theBall.getWidth());
-		assertEquals(40, theBall.getHeight());
+		assertEquals(30, theBall.getHeight());
 	}
 	
-	/*
+	/**
+	 * Test that the xVelocity/yVelocity in move() is equal to
+	 *  x/y from the ball constructor + (randomNum * intialSpeed)
+	 *  here replaced by 2. 
+	 */
 	@Test
-	void setXDirectionTest() {
-		setXDirection
+	void initialMoveValueTest() {
+		double move = theBall.getX() + velocity;
+		assertEquals(12, move);
 	}
-	
-	public void setXDirection(int randomXDirection) {
-		xVelocity = randomXDirection;
-
-	}
-
-	public void setYDirection(int randomYDirection) {
-		yVelocity = randomYDirection;
-	}
-	*/
 	
 }
