@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-package pong;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-
-class GameFrameTest { 
-
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
-
-}
-=======
 package pong;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -34,4 +19,4 @@ class GameFrameTest extends JFrame {
 	}
 	
 }
->>>>>>> branch 'main' of https://github.com/henrikbuller/utv_grupp8_pong.git
+
