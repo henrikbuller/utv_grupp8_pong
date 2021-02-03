@@ -7,12 +7,11 @@
 package pong;
 
 import java.awt.*;
-import java.awt.event.*;
 import java.util.*;
-import javax.swing.*;
 
 public class Ball extends Rectangle {
 
+	private static final long serialVersionUID = 7923823614354986187L;
 	Random random;
 	int xVelocity;
 	int yVelocity;

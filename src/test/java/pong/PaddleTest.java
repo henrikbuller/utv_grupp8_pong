@@ -1,11 +1,6 @@
 package pong;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
 import org.junit.jupiter.api.Test;
 
 class PaddleTest {

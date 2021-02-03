@@ -7,12 +7,11 @@
 package pong;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
 import javax.swing.*;
 
 public class GameFrame extends JFrame {
-    GamePanel panel;
+	private static final long serialVersionUID = -5967994939938066101L;
+	GamePanel panel;
 
     
     GameFrame() {

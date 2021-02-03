@@ -9,6 +9,7 @@ import javax.swing.*;
 
 import org.junit.jupiter.api.Test;
 
+@SuppressWarnings("serial")
 class GameFrameTest extends JFrame {
 	
 	@Test

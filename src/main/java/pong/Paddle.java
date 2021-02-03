@@ -12,6 +12,7 @@ import java.awt.event.*;
 
 public class Paddle extends Rectangle {
 
+	private static final long serialVersionUID = 567884302274297573L;
 	int id;
 	int yVelocity;
 	int speed = 10;

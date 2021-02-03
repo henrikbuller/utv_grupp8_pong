@@ -10,15 +10,13 @@
 package pong;
 
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
 public class Score extends Rectangle { 
 
+	private static final long serialVersionUID = 6922245527503502009L;
 	static int GAME_WIDTH;
 	static int GAME_HEIGHT;
 	int player1;

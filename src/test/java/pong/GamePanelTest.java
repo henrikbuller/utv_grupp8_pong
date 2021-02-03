@@ -15,7 +15,7 @@ class GamePanelTest {
 		// ball is not outside left of GamePanel
 		assertTrue(panel.ball.x >= 0);
 		// ball is not outside right of GamePanel
-		assertTrue(panel.ball.x <= panel.GAME_WIDTH - panel.BALL_DIAMETER);
+		assertTrue(panel.ball.x <= GamePanel.GAME_WIDTH - GamePanel.BALL_DIAMETER);
 	}
 
 	@Test
@@ -27,7 +27,7 @@ class GamePanelTest {
 
 	void testPanelIsCorrectSize() {
 		GamePanel panel = new GamePanel();
-		assertEquals(panel.SCREEN_SIZE, panel.getPreferredSize());
+		assertEquals(GamePanel.SCREEN_SIZE, panel.getPreferredSize());
 
 	}
 	
